@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 250px;
+            vertical-align: middle;
+        }
+        a{
+            font-size: 40pt;
+        }
+    </style>
+    <script>
+        let num = 1; //현재 화면에 보여지는 이미지의 번호랑 동일
+        function prevGallery(){
+            num--;
+            if(num<1){
+                num=3;
+            }
+            document.getElementById("gallery").src="../01_HTML/sample/image/img0"+num+".png";
+        }
+        function nextGallery(){
+            num++; // 다음 이미지를 보여주기 위해 num의 값을 1 증가
+            if(num>3){//num이 1,2,3 일때는 num>3 결과 값이 -> false -> false이므로 if 실행 안함.
+                      //num이 4 일때는 num>3 결과 값이 -> true -> true이니 if문 실행 된다.
+                num=1;
+            }
+
+            console.log("../01_HTML/sample/image/img0"+num+".png");
+            //id가 gallery인 엘리먼트에 다음 이미지의 경로를 넣어준다.
+            document.getElementById("gallery").src="../01_HTML/sample/image/img0"+num+".png";
+        }
+    </script>
+</head>
+<body>
+    <div id="galleryWrap">
+        <a onclick="prevGallery();"><</a>
+        <img src="../01_HTML/sample/image/img01.png" id="gallery">
+        <a onclick="nextGallery();">></a>
+
+    </div>
+    
+</body>
+</html>

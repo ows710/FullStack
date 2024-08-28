@@ -1,0 +1,17 @@
+package com.silsub1.book.model.vo;
+
+public class Book {
+	private String title;
+	private String author;
+	private int price;
+	
+	public Book() {}
+
+	public Book(String title, String author, int price) {
+		super();
+		this.title = title;
+		this.author = author;
+		this.price = price;
+	}
+	
+}

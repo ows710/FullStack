@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sematic 태그</title>
+    <style type="text/css">
+        .html5{
+            border: 1px dotted red;
+            margin: 10px;
+        }
+        section{
+            height: 400px;
+        }
+        #left{
+            width: 45%;
+            height: 85%;
+            float: left;
+        }
+        #right{
+            width: 45%;
+            height: 85%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    header : 제목, 로고, 아이콘 ..
+    nav : 탐색, 메뉴 ..
+    section : 콘텐츠를 주제별로 묶을 때.
+    article : 독립적으로 사용할 수 있는 내용을 정의.
+    footer : 저자, 저작권, 연락처, 주소 등등등
+    aside : 광고와 같은 메인내용과 상관없는 내용.
+    -->
+    <header class="html5">
+        <h1>제목</h1>
+        <nav class="html5">
+            <span>메뉴1</span>
+            <span>메뉴2</span>
+            <span>메뉴3</span>
+            <span>메뉴4</span>
+        </nav>
+    </header>
+    <section class="html5">
+        <article class="html5" id="left">
+            <p>왼쪽 본문 내용</p>
+        </article>
+        <article class="html5" id="right">
+            <p>오른쪽 본문 내용</p>
+        </article>
+    </section>
+    <footer class="html5">
+        <p>copyright &copy; all right reserved...</p>
+    </footer>
+</body>
+</html>

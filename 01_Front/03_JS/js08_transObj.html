@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형변환</title>
+    <script type="text/javascript">
+        function numTest(val){
+            let vals = Number(val) + 5;
+            //문자 + 숫자 = 문자
+            //문자 + "숫자" = 문자
+            //"30" + 5 => "30"+"5" =>"305"
+            alert(vals);
+
+        }
+        //const intTest = function(val){}
+        const intTest = val=>{
+            let vals = parseInt(val) + 15;
+            alert(vals);
+        }
+
+        const floatTest = function(val){
+            let vals = parseFloat(val) + 25;
+            alert(vals);
+        }
+    </script>
+</head>
+<body>
+    <!-- 형변환 : 타입을 변환 -->
+    <h2>1. 숫자형 형변환 Number() </h2>
+    <p>문자형의 정수or실수를 숫자형으로 변환</p>
+    <input type="text" id="num">
+    <button onclick="numTest(num.value);">확인</button>
+
+    <h2>2. 정수형 형변환 parseInt()</h2>
+    <p>문자형의 정수를 숫자형으로 변환시켜 준다.</p>
+    <input type="text" id="int">
+    <button onclick="intTest(int.value);">확인</button>
+
+    <h2>3. 실수형 형변환 parseFloat()</h2>
+    <input type="text" id="float">
+    <button onclick="floatTest(float.value);">확인</button>
+</body>
+</html>

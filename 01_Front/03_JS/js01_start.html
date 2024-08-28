@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 3.외부 작성 -->
+    <script type="text/javascript" src="./js/test.js"></script>
+</head>
+<body>
+    <h1>자바스크립트 Javascript(JS)</h1>
+    <div>웹 브라우저에서 많이 사용하는 인터프리터 방식의 프로그래밍 언어</div>
+    <hr>
+    <h1>자바스크립트 사용법</h1>
+    <div>
+        <p>1. 태그에 직접 간단한 코드를 작성해서 실행</p>
+        <p>2. script 라는 태그 영역에 작성해서 실행</p>
+        <p>3. 별도의 js파일로 작성해서 가져다 실행</p>
+    </div>
+    <div>
+        <p>소스코드는 함수 단위로 작성, 이벤트속성을 사용해서 구동하게 된다.</p>
+        <p>on이벤트명="실행할 함수명()"</p>
+          onclick = test()
+    </div>
+    <hr>
+    <h1>자바스크립트 작성방식 3가지</h1>
+    <ol>
+        <!-- 1. inline 태그에 직접 작성 -->
+        <li onclick="alert('inline');">inline방식</li>
+        <li onclick="test01();">내부 작성 방식</li>
+        <li onclick="test02();">외부 작성 방식</li>
+    </ol>
+    <script type="text/javascript">
+        // 두번쩨 li태그를 클릭했을 때 실행하려는 test01이라는 함수를 선언
+
+
+        function test01(){
+            alert('내부작성방식');
+            let doc = document.getElementsByTagName("li")[3];
+            doc.style.color = "red";
+            doc.innerHTML = "<b>글자가 바뀝니다.</b>";
+        }
+    </script>
+</body>
+</html>

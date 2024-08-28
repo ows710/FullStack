@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 생성</title>
+    <script>
+        function ranNum(){
+            var rnum = Math.floor(Math.random()*100+1);
+            document.getElementById("rnum").value = rnum;
+        }
+        function randomBgColor(){
+            let rnum = ()=> Math.floor(Math.random()*256);
+            //let rnum = function(){
+            //  return Math.floor(Math.random()*256);    
+            //}
+            
+            //console.log("rgb("+rnum()+","+rnum()+","+rnum()+")");
+            document.body.style.backgroundColor="rgb("+rnum()+","+rnum()+","+rnum()+")";
+
+        }
+        /*
+        Math.abs(-123);
+        123
+        Math.abs(123);
+        123
+        Math.abs(-123.333);
+        123.333
+        Math.abs(123.333);
+        123.333
+        Math.ceil(123.3);
+        124
+        Math.ceil(123.33);
+        124
+        Math.ceil(123.2);
+        124
+        */
+    </script>
+</head>
+<body>
+    <h1>랜덤 숫자 생성하기</h1>
+    숫자 : <input type="text" id="rnum" readonly="readonly"><br>
+    <input type="button" value="숫자 생성" onclick="ranNum();">
+    <hr>
+
+    <h1>랜덤으로 배경색 설정하기</h1>
+    <input type="button" value="배경색 변경" onclick="randomBgColor();">
+
+</body>
+</html>

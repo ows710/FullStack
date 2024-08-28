@@ -1,0 +1,5 @@
+package com.test01.chap04_field.constructor.model;
+
+public class User {
+
+}

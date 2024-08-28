@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택한 엘리먼트 하위 선택</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("b").click(function(){
+                $("p:eq(0)").add("span").css("color","red");
+            });
+
+            $("div").children().click(function(){
+                if($(this).prop("tagName") == "SPAN" ){
+                    alert("span 태그 출력");
+                    $(this).css("color","blue");
+                }
+
+                if($(this).is("p")){
+                    alert("p 태그 출력");
+                    $(this).css("background-color","skyblue");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p>add()</p>
+        <span>선택한 엘리먼트에 추가적으로 selector 표현식을 작성하여 선택하고자 할때</span>
+        <p>is()</p>
+        <b>선택한 엘리먼트 중에 구하는 엘리먼트가 있는지 확인하고자 할때</b>
+    </div> 
+</body>
+</html>

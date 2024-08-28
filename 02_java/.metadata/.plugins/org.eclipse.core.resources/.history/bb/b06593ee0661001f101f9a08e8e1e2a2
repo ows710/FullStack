@@ -1,0 +1,5 @@
+package com.inherit.par01_inheritTest.after;
+
+public class Computer {
+
+}

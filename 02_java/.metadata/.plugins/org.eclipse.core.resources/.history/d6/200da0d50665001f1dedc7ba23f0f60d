@@ -1,0 +1,9 @@
+package com.poly.test05;
+
+public abstract class AreaImpl implements Area {
+	
+	@Override
+	public void print() {
+		System.out.println();
+	}
+}

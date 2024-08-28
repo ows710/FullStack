@@ -1,0 +1,5 @@
+package silsub1.model.vo;
+
+public class Member {
+
+}

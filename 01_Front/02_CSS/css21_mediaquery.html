@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        @media screen and (min-width:840px) {
+            /* 최소가 840px 까지 ==> 840 이상 일때만 */
+            /* 아래의 스타일 적용 */
+            img{
+                width: 400px;
+                height: 500px;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            img{
+                width: 600px;
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        미디어쿼리 : 미디어타입 + 조건에 대한 물음(쿼리)
+        @media screen and (max-width:~~~~){
+            화면의 너비가 ~~~~이하일때 적용될 스타일;
+        }
+    -->
+    <img src="../01_HTML/sample/image/img02.png">
+</body>
+</html>

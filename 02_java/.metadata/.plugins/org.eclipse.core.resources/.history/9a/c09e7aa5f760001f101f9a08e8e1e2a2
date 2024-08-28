@@ -1,0 +1,11 @@
+package com.inherit.par01_inheritTest.after;
+import java.util.Date;
+public class Product {
+	//상품에 대한 공통적인 요소만 추출하여 부모클래스로 작성
+	private String brand;
+	private String productNumber;
+	private String productCode;
+	private String productName;
+	private int price;
+	private Date date;
+}

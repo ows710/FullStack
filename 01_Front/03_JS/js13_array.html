@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+    <script type="text/javascript">
+        function test01(){
+            let arr = ['이창진',20,true,[1,2,3,4]];
+            document.getElementById("area").innerHTML += arr;
+            //console.log(arr);
+
+        }
+        function test02(){
+            let arr = new Array();  //크기를 지정하지 않고 선언 가능
+            let arr2 = new Array(3);//크기를 정하고 선언 가능
+
+            console.log(arr[0]);
+            console.log(arr.length);
+
+            console.log(arr2[0]);
+            console.log(arr2.length);
+
+            //배열에 값 대입
+            arr[0] ="바나나";
+            console.log(arr);
+
+            arr2[0] = "자동차";
+            arr2[1] = "비행기";
+            arr2[2] = "기차";
+            arr2[3] = "도보";
+            console.log(arr2);
+
+
+            let arr3 = new Array("이창진","김창진","박창진");
+            console.log(arr3);
+            console.log(arr3.length);
+
+            let arr4 = [1,2,3,4,5];
+
+        }
+
+        let test03 = ()=>{
+            //array도 하나의 객체이므로 활용할 수 있는 메소드가 존재한다.
+            const doc = document.getElementById("area");
+
+            //indexOf() : 배열에서 요소가 위치한 인덱스 리턴
+            let arr = ['사과', '딸기', '복숭아', '바나나','키위','망고','포도'];
+
+            doc.innerHTML += "바나나가 있는 인덱스 : "+arr.indexOf('바나나')+"<br>";
+
+            //concat() : 배열을 결합한다.
+            arr = ['사과','딸기','복숭아'];
+            let arr2 = ['바나나','키위','망고','포도'];
+
+            doc.innerHTML += "arr : " + arr + "<br>";
+            doc.innerHTML += "arr2 : " + arr2 + "<br>";
+            doc.innerHTML += "arr기준으로 합침: " + arr.concat(arr2) +"<br>";
+            doc.innerHTML += "arr2기준으로 합침: " + arr2.concat(arr) + "<br>";
+
+            console.log(arr.concat(arr2));
+
+
+            //reverse() : 배열의 순서를 뒤집는다.
+            arr = [1,2,3,4,5,6,7,8,9];
+
+            doc.innerHTML += "arr: " + arr + "<br>";
+            doc.innerHTML += "arr reverse: " + arr.reverse() +"<br>";
+            doc.innerHTML += "arr 다시 출력: " + arr +"<br>";
+
+            //sort() : 정렬
+            arr = [10,543,34,450,123,885];
+
+            doc.innerHTML += "arr: " + arr + "<br>";
+
+            //오름차순 정렬
+            doc.innerHTML += "arr.sort(): " + arr.sort(function(left, right){
+                                                            return left-right;
+                                                        })+ "<br>";
+            //내림차순 정렬
+            doc.innerHTML += "내림차순 : " + arr.sort(function(left, right){
+                                                            return right-left;
+                                                        })+ "<br>";
+
+            arr = ['z','a','d','f'];
+            alert(arr.sort().reverse());
+        }
+        function test04(){
+            let doc = document.getElementById("area");
+
+            //push(): 배열의 맨 뒤에 추가, pop() : 배열의 맨 뒤에 제거
+            let arr = ['서초동','방배동','역삼동','대치동','양재동'];
+
+            doc.innerHTML += "arr 기본값: " + arr + "<br>";
+
+            arr.push('삼성동');
+            doc.innerHTML += "arr에 push: " + arr + "<br>";
+
+            arr.sort();
+            doc.innerHTML += "arr 정렬: " + arr + "<br>";
+
+            doc.innerHTML += "arr에 pop: " + arr.pop() + "<br>";
+            doc.innerHTML += "pop 수행 후 arr: " + arr +"<br>";
+
+            //shift(): 배열의 맨 앞 요소 제거 , unshift(): 배열의 맨 앞에 요소 추가
+            arr = ['야구','축구','탁구','배드민턴'];
+            doc.innerHTML +="<br>arr의 기본값 : " + arr + "<br>";
+
+            doc.innerHTML +="arr에 shift: " + arr.shift() +"<br>";
+            doc.innerHTML +="shift 후 arr: "+ arr +"<br>";
+            
+            doc.innerHTML +="arr에 unshift: " + arr.unshift('테니스') +"<br>";
+            doc.innerHTML +="unshift 후 arr: "+ arr +"<br>";
+
+            //slice : 배열의 요소 선택 잘라내기, splice():배열의 index 위치의 요소 제거 및 추가
+            arr = ['오예스','몽쉘','초코파이','초코칩쿠키','꼬깔콘','새우깡','빠다코코넛'];
+            //slice(시작인덱스,종료인덱스)
+            doc.innerHTML += "arr에 slice: " + arr.slice(2,4) + "<br>";
+            doc.innerHTML += "slice 후 arr: " + arr + "<br>";
+            //splice(index,제거수,추가값)
+            //doc.innerHTML += "arr에 splice: " + arr.splice(2,2) + "<br>"; //arr에 splice: 초코파이,초코칩쿠키 //splice 후 arr: 오예스,몽쉘,꼬깔콘,새우깡,빠다코코넛
+            doc.innerHTML += "arr에 splice: " + arr.splice(2,2,'사브레') + "<br>";
+            doc.innerHTML += "splice 후 arr: " + arr +"<br>";
+
+            //toString() : 배열을 문자열로 반환
+            var str = arr.toString();
+            doc.innerHTML +="arr에 toString: " + str + "<br>";
+            doc.innerHTML +="str의 자료형: " + typeof(str)+"<br>";
+        }
+    </script>
+</head>
+<body>
+    <h1>배열</h1>
+    <p>배열이란 변수의 모음</p>
+    <button onclick="test01();">확인</button>
+
+    <p>배열의 선언</p>
+    <button onclick="test02();">확인</button>
+
+    <p>배열의 메소드</p>
+    <button onclick="test03();">확인</button>
+    <button onclick="test04();">확인</button>
+
+
+    <div id="area"></div>
+</body>
+</html>

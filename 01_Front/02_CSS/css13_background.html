@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style type="text/css">
+        div,p{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        #bgclip{
+            border: 10px dotted black;
+            padding: 50px;
+            background-color: blue;
+            background-clip: content-box;
+            /*  배경을 어디까지 채울지
+                padding-box: padding 영역까지
+                border-box : 기본값, border라인까지
+                content-box : 내용 영역까지
+            */
+        }
+        #wrap{
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>background-clip</h1>
+    <div id="bgclip">background-clip</div>
+
+    <h1>word-wrap</h1>
+    <p id="wrap">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세. 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</p>
+</body>
+</html>

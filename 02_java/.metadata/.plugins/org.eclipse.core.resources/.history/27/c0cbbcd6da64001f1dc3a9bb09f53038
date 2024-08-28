@@ -1,0 +1,10 @@
+package com.uni;
+
+public class Human {
+	protected String name;
+	protected int age;
+	protected int height;
+	protected int weight;
+	
+
+}

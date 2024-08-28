@@ -1,0 +1,94 @@
+/* 타입선택자 */
+pre{
+    text-align: center;
+}
+
+/* id선택자 */
+#side01{
+    color: orange;
+}
+#sid02{
+    color: yellow;
+}
+#sid03{
+    color: brown;
+}
+
+/* class선택자 */
+#scls01{
+    color: black;
+}
+.scls{
+    color: pink;
+}
+
+/* 전체 선택자 */
+/*
+*{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+/* 인접 선택자 */
+h3 + b{
+    background-color: black;
+    color: white;
+}
+#sid04 + b{
+    background-color: yellow;
+    color: aqua;
+}
+
+/* 속성 선택자 */
+p[title]{
+    color: skyblue;
+}
+p[title="b"]{
+    background-color: yellow;
+}
+
+/* 가상 클래스선택자 */
+/*
+    link : 방문 전 링크 선택
+*/
+a:visited{
+    color: red;
+    font-size: 30pt
+}
+a:hover{
+    background-color: purple;
+}
+input:checked{
+    width: 200px;
+    height: 200px;
+}
+
+/* 종속 선택자 */
+li.acls01{
+    background-color: green;
+}
+li.acls02#sidli{
+    background-color: yellow;
+}
+
+/* 자식 선택자 */
+#at > p{
+    color: orange;
+}
+#at > div > p{
+    color: silver;
+}
+/* 하위 선택자 */
+div span{
+    background-color: aquamarine;
+}
+article > div > p > p {
+    background-color: red;
+}
+
+/* 그룹 선택자 */
+p,pre,strong{
+    color: lime;
+}

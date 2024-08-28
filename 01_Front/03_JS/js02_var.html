@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+    <script>
+        let variable = 10; //전역변수: 공용으로 사용, 값 유지된다.
+
+        function test01(){
+            variable = variable + 5;
+            document.getElementById("v01").innerHTML =
+                "<b style='color:red; background:yellow;'>"+ variable + "</b>"
+                //"<b style='color:red; background:yellow;'>15</b>"
+        }
+        function test02(){
+            const variable2 = variable+100; //지역변수
+            document.getElementById("v02").innerHTML = "<b>"+variable2+"</b>";
+        }
+        function test03(){
+            console.log("안녕하세요! 테스트입니다.");
+            //console.log(variable2); 지역변수 이므로 사용 불가
+            console.log(variable); //전역변수 이므로 사용 가능
+
+            var test = 1;
+            console.log(test);
+            let test2 = 2;
+            console.log(test2);
+            const test3 = 3;
+            console.log(test3);
+
+            //test3 = 33; // 변경 불가, 값을 한번 저장을 한 다음 변경이 불가능 하다. immutable 변수.
+            //console.log(test3);
+
+            test2 = 22;
+            console.log(test2);
+
+            //호이스팅
+            console.log(test4);
+            var test4 = 4;
+            console.log(test4);
+
+            //타입
+            //문자 String
+            let variable3 = '문자';
+            console.log(variable3 + " : " + typeof variable3);
+            //문자 + 숫자 => 문자
+            //문자 + 문자 => 문자
+            //숫자 + 숫자 => 숫자
+
+            //숫자 number
+            variable3 = 5;
+            console.log(variable3 + " : " + typeof variable3);
+            console.log(`${variable3} , ${typeof variable3}`);
+            // ` 백틱. 숫자 1 옆에 물결이랑 같이
+
+            //논리 boolean
+            variable3 = true; // true false ==>논리값
+            console.log(`${variable3} , ${typeof variable3}`);
+
+            //객체(object)
+            variable3 = [1,3,5,6,7,8]; //배열
+            console.log(`${variable3} , ${typeof variable3}`);
+            variable3 = {
+                name:'이창진',
+                age:20
+            };
+
+            //함수 function
+            variable3 = function(){
+                alert('타입 테스트');
+            }
+            console.log(`${variable3} , ${typeof variable3}`);
+
+            variable3();
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <dl>
+        <dt>변수의 선언 규칙</dt>
+        <dd>1. 대소문자 구분한다.</dd>
+        <dd>2. 영문,$,_로 시작한다.</dd>
+        <dd>3. 영문,$,_,숫자를 포함할 수 있다.</dd>
+        <dd>4. 키워드나 예약어를 사용할 수 없다.</dd>
+
+        <dt>변수의 범위</dt>
+        <dd>1. 전역변수 : 다른 함수들에서 공용으로 사용 가능 하다.
+            다른 함수들에서 공용으로 사용할 수 있다(값 유지)
+            <button onclick="test01();">확인</button>
+        </dd>
+        <dd id="v01"></dd>
+        <dd>2. 지역변수 : 함수나 객체 내부에 선언되고 실행이 종료되면 사라진다.
+            <button onclick="test02();">확인</button>  <!-- 이 버튼을 클릭 했을 때 test02()라는 함수가 실행--> 
+        </dd>
+        <dd id="v02"></dd>
+
+        <dt>변수의 선언</dt>
+        <dd>1. let,const,var 키워드를 사용하여 선언</dd>
+        <dd>2. 변수의 타입은 저장되는 데이터의 타입에 따라 결정된다.
+            <button onclick="test03();">확인</button>
+        </dd>
+
+        <dt>타입 종류</dt>
+        <dd>1.문자(String)</dd>
+        <dd>2.숫자(number)</dd>
+        <dd>3.논리(boolean)</dd>
+        <dd>4.널(Null)</dd>
+        <dd>5.객체(object)</dd>
+        <dd>6.함수(function)</dd>
+        
+    </dl>
+    
+</body>
+</html>

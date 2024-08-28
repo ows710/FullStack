@@ -1,0 +1,8 @@
+package com.poly.test05;
+
+public interface Area {
+	
+	public abstract void print();
+	void make();
+
+}

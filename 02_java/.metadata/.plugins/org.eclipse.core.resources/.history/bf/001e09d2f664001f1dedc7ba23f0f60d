@@ -1,0 +1,33 @@
+package com.poly.test02;
+
+import java.util.Scanner;
+public class MTest {
+
+	public static void main(String[] args) {
+		System.out.print("선택 [1.고양이 2.송아지 3.강아지] : ");
+		int sel = new Scanner(System.in).nextInt();
+		
+		Cat cat = null;
+		Cow cow = null;
+		Dog dog = null;
+		
+		switch(sel) {
+		case 1:
+			cat = new Cat();
+			cat.start();
+			cat.stop();
+			break;
+		case 2:
+			cow = new Cow();
+			cow.start();
+			cow.stop();
+			break;
+		case 3:
+		}
+		
+		
+		
+		
+	}
+
+}

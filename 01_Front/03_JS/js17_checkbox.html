@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스</title>
+<style>
+    #colorbox{
+        width: 320px;
+        height: 320px;
+        position : relative;
+    }
+    #red,#yellow,#blue,#black{
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        position: absolute;
+    }
+    #yellow{left: 160px;}
+    #blue{top: 160px;}
+    #black{left: 160px; top: 160px;}    
+</style>
+<script type="text/javascript">
+    function sel(){
+        let chks = document.getElementsByName("chk");
+
+        if(chkChecked(chks)>0){
+            //하나 이상 체크를 하였다면...
+            
+            for(let i=0;i<chks.length;i++){
+                if(chks[i].checked){
+                    //i번째 체크박스가 체크되어있다면 해당 input태그와 매칭이 되는 colorbox의 색을 변경
+                    document.getElementById(chks[i].value).style.backgroundColor=chks[i].value;
+                }else{
+                    document.getElementById(chks[i].value).style.backgroundColor="white";
+                }
+            }
+        }
+    }
+    function chkChecked(chks){
+        //chk 중에 checked 상태인 태그가 몇개인지 체크.
+        let cnt=0;
+        
+        for(let i=0;i<chks.length;i++){
+            if(chks[i].checked){
+                //checked값이 true이면 여기 실행
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+
+    function allsel(check){
+        let chks = document.getElementsByName("chk");
+
+        for(let i=0; i<chks.length; i++){
+            chks[i].checked = check;
+        }
+    }
+    function clearDiv(){
+        //컬러박스는 하얗게, 체크박스는 체크해제
+        let colorboxs = document.querySelectorAll("#colorbox > div");
+        for(var i=0; i<colorboxs.length; i++){
+            colorboxs[i].style.backgroundColor="white";
+        }
+
+        allsel(false);
+        document.getElementsByName("all")[0].checked = false;
+
+    }
+    function allCheck(){
+        //하나라도 체크 해제 하면 전체선택 체크해제, 전부다 체크하면 전체선택 체크
+
+        let chks = document.getElementsByName("chk");
+        if(chkChecked(chks) == chks.length){
+            //체크된 체크박스의 수 == 체크박스의 갯수 ==> 다 체크되었다
+            document.getElementsByName("all")[0].checked = true;
+        }else{
+            //if문의 조건이 만족하지 않을때 실행
+            //체크박스 전체가 체크되어있지 않을때(하나라도 체크해제인 상태)
+            document.getElementsByName("all")[0].checked = false;
+        }
+    }
+</script>
+</head>
+<body>
+    <div id="colorbox">
+        <div id="red">red</div>
+        <div id="yellow">yellow</div>
+        <div id="blue">blue</div>
+        <div id="black">black</div>
+    </div>
+    <div id="base">
+        <form>
+            <input type="checkbox" name="all" onclick="allsel(this.checked);">전체선택<br>
+
+            <input type="checkbox" name="chk" value="red"    onclick="allCheck();">빨강<br>
+            <input type="checkbox" name="chk" value="yellow" onclick="allCheck();">노랑<br>
+            <input type="checkbox" name="chk" value="blue"   onclick="allCheck();">파랑<br>
+            <input type="checkbox" name="chk" value="black"  onclick="allCheck();">검정<br>
+
+            <input type="button" value="선택" onclick="sel();">
+            <input type="button" value="초기화" onclick="clearDiv();">
+
+        </form>
+    </div>
+</body>
+</html>

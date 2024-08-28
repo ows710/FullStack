@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삽입순서</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("button:eq(0)").click(function(){
+                $("#base").after("<div>새로운 엘리먼트(after)</div>");
+                //after : 선택한 요소 바로 뒤쪽에 새로운 요소나 컨텐츠 추가.
+            });
+            $("button:eq(1)").click(function(){
+                $("<div>새로운 엘리먼트(insertAfter)</div>").insertAfter("#base");
+            });
+            $("button:eq(2)").click(function(){
+                $("#base").before("<div>새로운 엘리먼트(before)</div>");
+                //before : 선택한 요소 바로 앞쪽에 새로운 요소나 컨텐츠 추가.
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>after()</button>
+    <button>insertAfter()</button>
+    <button>before()</button>
+
+    <div id="base">
+        <p>외부 삽입</p>
+    </div>
+</body>
+</html>

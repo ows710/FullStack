@@ -1,0 +1,17 @@
+package com.silsub1.model;
+
+public class Sample {
+	public void munjae1() {
+		int [][] iarr = new int[4][4];
+		
+		for(int i=0; i<iarr.length-1; i++) {
+			for(int j=0; j<iarr[i].length; j++) {
+				
+			}
+		}
+		
+	}
+	public void munjae2() {
+		
+	}
+}

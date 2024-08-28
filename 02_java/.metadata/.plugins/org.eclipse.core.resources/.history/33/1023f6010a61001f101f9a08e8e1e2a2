@@ -1,0 +1,16 @@
+package com.inherit.par01_inheritTest.after;
+
+public class Desktop extends Computer {
+
+	//고유속성을 정의
+	private boolean allInOne;
+	
+	public Desktop() {}
+
+	public Desktop(boolean allInOne) {
+		super();
+		this.allInOne = allInOne;
+	}
+	
+	
+}

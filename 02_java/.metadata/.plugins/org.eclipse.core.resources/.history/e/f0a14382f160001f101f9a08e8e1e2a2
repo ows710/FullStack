@@ -1,0 +1,27 @@
+package com.inherit.par01_inheritTest.before.mode.vo;
+
+import java.util.Date;
+
+public class Television {
+	private String brand;
+	private String productNumber;
+	private String productCode;
+	private String productName;
+	private int price;
+	private Date date;
+	private int inch;
+	
+	public Television() {/* super();	//부모클래스 생성자 호출 */}
+
+	public Television(String brand, String productNumber, String productCode, String productName, int price, Date date,
+			int inch) {
+		super();
+		this.brand = brand;
+		this.productNumber = productNumber;
+		this.productCode = productCode;
+		this.productName = productName;
+		this.price = price;
+		this.date = date;
+		this.inch = inch;
+	}
+

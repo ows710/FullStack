@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 모델</title>
+    <script type="text/javascript">
+        
+        window.onload=function(){
+            let test1 = document.getElementById("test1");
+            let test2 = document.getElementById("test2");
+            let test3 = document.getElementById("test3");
+
+            test1.onclick=function(){
+                document.getElementById("area").innerHTML += "안녕하세요. test1 실행.";
+            }
+            test2.onclick=function(event){
+                //이벤트객체 : 발생한 이벤트의 정보를 저장. 자동으로 생성
+                console.log(event);
+
+                document.getElementById("area").innerHTML += "반갑습니다. test2 실행.";
+
+                //test1 이벤트 제거
+                test1.onclick=null;
+            }
+
+            //표준
+            test3.addEventListener("click",function(){
+                document.getElementById("area").innerHTML += "고맙습니다. test3 실행.<br>";
+            });
+
+        }
+
+        function test4(){
+            alert("test4() 실행확인");
+        }
+        function test5(){
+            let name = document.getElementById("name").value;
+            if(name=="이창진"){
+                alert("이름이 일치합니다.");
+            }else{
+                alert("이름이 일치하지 않습니다. 다시 입력해 주세요.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 대상(html 요소),타입(클릭,더블클릭,키보드..),리스너(동작함수) -->
+    <h3>이벤트</h3>
+    <h3>이벤트 모델(작성 방법)</h3>
+    <button id="test1">고전 이벤트 모델</button><button id="test2">테스트</button>
+    <button id="test3">표준 이벤트 모델</button>
+    <button id="test4" onclick="test4();">인라인 이벤트 모델</button>
+    <div id="area"></div>
+
+    <hr>
+    <h3>기본이벤트의 제거</h3>
+    <form>
+        <label>이름: </label> <input type="text" name="name" id="name">
+        <input type="submit" value="제출" onclick="return test5();">
+    </form>
+
+</body>
+</html>

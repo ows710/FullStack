@@ -1,0 +1,10 @@
+package com.inherit.par01_inheritTest.after;
+
+public class SmartPhone extends Computer {
+	private String mobileAgency;
+	
+	//생성자(기본, 매개변수)
+	public SmartPhone() {}
+	//getter&setter
+	//printInfo();
+}

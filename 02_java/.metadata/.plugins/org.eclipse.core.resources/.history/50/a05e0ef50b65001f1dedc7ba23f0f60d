@@ -1,0 +1,11 @@
+package com.poly.test05;
+
+import java.util.Scanner;
+
+public class Square extends AreaImpl {
+
+	@Override
+	public void make() {
+		Scanner sc = new Scanner(System.in);
+	}
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <script>
+        const test=()=>{
+            //페이지 이동
+            //location.href="http://www.google.com";
+
+            //페이지 이동(전 단계 이력X)
+            //location.replace("http://www.google.com");
+
+            //페이지 새로고침
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    <!-- location : url 관련된 객체 -->
+    <a href="http://www.google.com">구글로 이동</a>
+
+    <button onclick="test();">이동</button>
+</body>
+</html>

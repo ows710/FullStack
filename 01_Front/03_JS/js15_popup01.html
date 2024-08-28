@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업창</title>
+    <script type="text/javascript">
+        function popUp(){
+            //window.open(url,name,spec);
+            //url : 보여질 주소
+            //name : 새창의 속성, _blank(새창), _self(현재창)
+            //spec : 창의 속성
+            window.open("js15_popup02.html","_blank","width=200px,height=200px");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="popUp();">팝업</button>
+
+
+    <h1>window객체</h1>
+    <pre>
+    프로퍼티(속성)
+        -document
+        -history
+        -location
+        -navigator
+        -screen
+        -self
+        -...
+    메서드(함수)
+        -alert()
+        -confirm()
+        -prompt()
+        -open()
+        -close()
+        - ...
+    </pre>
+</body>
+</html>

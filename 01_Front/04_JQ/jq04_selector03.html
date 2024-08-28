@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 값 가져오기</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function click01(){
+            let inputVal = $("input:text").val();
+            alert(inputVal);
+            //js : value, jq : val();
+        }
+        function click02(){
+            //라디오 버튼의 value 값을 alert으로 확인
+            let inputVal = $("input:radio").val();
+            alert(inputVal);
+        }
+        function click03(){
+            let inputVal = $("input:checkbox").val();
+            $("#res").html("<b>"+inputVal+"</b>");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <input type="button" value="선택" onclick="click01();"><br>
+        <input type="radio" value="0729~" onclick="click02();">0729~
+        <input type="checkbox" value="개발자아카데미2회차" onclick="click03();">개발자아카데미2회차
+        <div id="res"></div>
+    </form>
+</body>
+</html>

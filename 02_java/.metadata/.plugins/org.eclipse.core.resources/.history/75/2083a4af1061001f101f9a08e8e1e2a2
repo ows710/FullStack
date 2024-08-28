@@ -1,0 +1,10 @@
+package com.inherit.par02_overrideTest.model.vo;
+
+public class Book {
+	private String title;
+	private String writer;
+	private int price;
+	
+	
+	
+}

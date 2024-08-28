@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버블링</title>
+    <style>
+        div{
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+            padding: 20px;
+        }
+        div p:first-child{
+            float: left;
+            border: 1px solid blue;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+        }
+        div p:last-child{
+            float: right;
+            border: 1px solid blue;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+        }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        // 이벤트 전파(버블링) : 각 요소가 서로 포함(중첩)인 경우
+        //                      요소 중 하나에 이벤트가 발생하면
+        //                      중첩된 요소들도 전파된다.
+        $(function(){
+            $("a").click(function(){
+                alert("a클릭!");
+                return false;
+            });
+            $("p").click(function(){
+                alert("p클릭!");
+            });
+            $("div").click(function(){
+                alert("div클릭!");
+            });
+
+            //
+            $("button").click(function(){
+                $("body").append("<p>새로 추가된 p태그</p>");
+            });
+
+            $("body").on("click",">p",function(){
+                alert("새로 추가된 요소도 이벤트 적용");
+            });
+            $("span").click(function(){
+                alert("span 클릭!");
+                $("a").unbind();
+            });
+        });
+    </script>
+</head>
+<body>
+    <span>이벤트 해제 : unbind()</span>
+    <div>
+        <p>
+            <a href="http://www.naver.com">클릭!</a>
+        </p>
+        <p>
+            클릭!
+        </p>
+    </div>
+    <div>
+        <p>
+            <a href="http://www.google.com">클릭!</a>
+        </p>
+        <p>
+            클릭!
+        </p>
+    </div>
+    <button>요소 추가</button>
+</body>
+</html>

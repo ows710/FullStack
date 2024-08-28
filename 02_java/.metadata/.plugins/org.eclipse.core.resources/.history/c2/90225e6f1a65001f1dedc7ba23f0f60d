@@ -1,0 +1,5 @@
+package com.silsub1.book.model.vo;
+
+public class Book {
+
+}

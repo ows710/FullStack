@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em,rem</title>
+    <style type="text/css">
+
+        .outer{
+            font-size: 24px;
+        }
+
+        /* 기본 폰트사이즈 16 */
+        .inner{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+
+            /*
+            font-size: 2em;
+            margin: 1em;
+            padding: 1em;
+            */
+            font-size: 1rem;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        px : 기본 단위.
+        % : 부모 요소의 크기에 대한 상대적 비율
+        em : 부모 요소의 폰트 사이즈에 따라 크기가 결정.
+        rem : 루트의 크기에 따라 결정
+     -->
+        <div class="outer">
+            <div class="inner">테스트</div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 전달</title>
+    <style>
+        .div-test{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: orange;
+        }
+        .div3{
+            background-color: yellow;
+        }
+        .div4{
+            background-color: green;
+        }
+    </style>
+    <script>
+        function test1(msg){
+            alert(msg);
+        }
+    </script>
+</head>
+<body>
+    <h1>이벤트 전달</h1>
+    <h3>이벤트 버블링</h3>
+    <div class="div-test div1" onclick="test1('1번 div');">
+        <div class="div-test div2" onclick="test1('2번 div');">
+            <div class="div-test div3" onclick="test1('3번 div');">
+                <div class="div-test div4" onclick="test1('4번 div');"></div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert: 단순 경고나 코드 디버깅용으로 주로 사용
+        function alertTest(){
+            window.alert("내용 출력(단순 대화창)");
+        }
+        //confirm: 확인/취소 버튼 제공(true/false)
+        function confirmTest(){
+            const test = confirm("배경을 분홍으로 바꿀까요?");
+            console.log(test);
+
+            if(test){
+                document.body.style.backgroundColor="pink";
+            }else{
+                alert("기본 색상 유지");
+            }
+            //제어문-조건문
+            //if문
+            //프로그램의 흐름을 제어 한다.(제어문)- 조건을 만족하는지, 만족하지 않는지에 따라
+            //코드의 흐름을 바꿔주는 if문.
+            // if(조건식){ 조건식이 true일때 실행할 코드; }
+            // if(조건식){ 조건식이 true일때 실행할 코드; } else { 조건이 false일때 실행할 코드;}
+
+        }
+
+
+        //prompt: 텍스트박스, 확인/취소버튼
+        //      텍스트박스에 입력한 값을 되돌려 준다!(취소:null)
+        function promptTest(){
+            const txt = prompt("좋아하는 과목을 선택해주세요.[1:html 2:css 3:js]");
+            console.log(txt);
+            //switch문 -> 조건문
+            switch(txt){
+                case "1": //txt값이 "1"인 경우에 실행
+                    console.log("역시 html");
+                    break;
+                case "2":
+                    console.log("역시 css");
+                    break;
+                case "3":
+                    console.log("역시 js");
+                    break;
+                case null:
+                    console.log("다 싫어요?");
+                    break;
+                default:
+                    console.log("1,2,3 번 중 하나만 선택해주세요.")
+            }
+            //조건에 만족하는 case가 실행!
+
+        }
+    </script>
+</head>
+<body>
+    <!-- 함수(function) 기능으로서 작업을 수행하게 만들어진 독립적인 블록
+        사용자가 작성하는 함수 외에도 기본함수들이 많다.
+    -->
+        <h1>window 객체에서 제공하는 함수</h1>
+        <small>
+            종류에는 <b>alert(), confirm(), prompt()</b>
+        </small>
+
+        <p>alert() : <button onclick="alertTest();">클릭</button></p>
+        <p>confirm() : <button onclick="confirmTest();">클릭</button></p>
+        <p>prompt() : <button onclick="promptTest();">클릭</button></p>
+</body>
+</html>

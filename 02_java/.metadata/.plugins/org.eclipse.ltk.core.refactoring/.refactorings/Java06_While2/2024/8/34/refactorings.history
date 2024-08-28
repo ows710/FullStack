@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.test01&apos; to &apos;Java06_While/src&apos;&#x0D;&#x0A;- Original project: &apos;Java06_While2&apos;&#x0D;&#x0A;- Destination element: &apos;Java06_While/src&apos;&#x0D;&#x0A;- Original element: &apos;Java06_While2/src/com.test01&apos;" description="Copy package" destination="=Java06_While/src" element1="/src&lt;com.test01" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1724043180628" version="1.0"/>
+</session>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit이벤트</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            // .submit() : form에서 submit 이벤트 발생되면 실행
+            $("#signal").submit(function(){
+                let inputVal = $(".infobox").val();
+                if(inputVal==""||inputVal==null){
+                    $(".error").show();
+                    return false;
+                }
+            });
+
+            $("#confirm").click(function(){
+                if($("input[name=chk]:checked").length == 0){
+                    alert("하나 이상 선택해주세요");
+                }else{
+                    $("input[name=chk]:checked").each(function(i){
+                        let chk = $("input[name=chk]:checked").eq(i);
+                        let product = chk.next().text();
+                        let price = chk.val();
+                        $("#res").append(product+" 가격: "+price+"<br>");
+                    });
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <form action="" method="" id="signal">
+        <div>
+            <span class="label">User Id</span><input type="text" class="infobox" name="userId">
+            <span class="error" style="color: red; display: none;">반드시 입력하세요!</span>
+        </div>
+        <input type="submit" class="submit" value="입력하기">
+
+        <hr>
+
+        <fieldset>
+            <legend>체크 여부 확인</legend>
+            <input type="checkbox" name="all">전체선택<br>
+
+            <input type="checkbox" name="chk" value="50000"><b>신발</b><br>
+            <input type="checkbox" name="chk" value="30000"><b>티셔츠</b><br>
+            <input type="checkbox" name="chk" value="90000"><b>코트</b><br>
+
+            <input type="button" value="확인" id="confirm"><br>
+            <span>선택한 제품 가격</span>
+            <div id="res"></div>
+        </fieldset>
+    </form>
+</body>
+</html>

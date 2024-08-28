@@ -1,0 +1,10 @@
+package com.poly.test05;
+
+public class Circle extends AreaImpl {
+	
+	@Override
+	public void make() {
+		
+	}
+
+}

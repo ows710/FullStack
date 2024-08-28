@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>효과-애니메이션 연속</title>
+    <style>
+        #box{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".run").click(function(){
+                $("#box").animate({left:"400px",opacity:"0.1"},1000)
+                         .animate({opacity:"0.4",top:"160px",width:"20px",height:"20px"},"slow");
+                //기본값 400, slow 600, fast 200
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <p><a class="run">Run</a></p>
+    <div id="box"></div>
+</body>
+</html>

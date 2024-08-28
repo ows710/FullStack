@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style type="text/css">
+        .basic{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+            font-size: 30pt;
+        }
+
+        #tlate{
+            transform: translate(50px,50px);
+        }
+        #trotate{
+            transform: rotate(30deg);
+        }
+        #tscale{
+            transform: scale(0.7,0.7);
+        }
+        #tran:hover{
+            width: 800px;
+            background-color: blue;
+            transform: translate(300px,0px);
+        }
+        /* 속성 변경 속도 조절 */
+        #tran{
+            transition: width 0.5s linear, background 1.5s, transform 1.5s;
+        }
+
+        li{
+            width: 400px;
+            background-color: pink;
+            font-size: 30pt;
+            font-weight: bold;
+            list-style-type: none;
+            margin-bottom: 3px;
+            cursor: pointer;
+            transition: width 1s linear, color 1s linear, letter-spacing 1s;
+        }
+        li:hover{
+            width: 800px;
+            color: blue;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>transform - translate</h2>
+    <div id="tlate" class="basic">translate(x,y) : 위치이동</div>
+
+    <h2>transform - rotate</h2>
+    <div id="trotate" class="basic">rotate(deg) : 회전</div>
+
+    <h2>transform - scale</h2>
+    <div id="tscale" class="basic">scale(x,y) : 크기</div>
+
+    <h2>transition 속성 전환</h2>
+    <div id="tran" class="basic">transition</div>
+
+    <div>
+        <h2>Moving mainMenu</h2>
+        <ul>
+            <li>COMPANY</li>
+            <li>PRODUCT</li>
+            <li>SERVICE</li>
+            <li>SUPPORT</li>
+            <li>COMMUNITY</li>
+        </ul>
+    </div>
+</body>
+</html>

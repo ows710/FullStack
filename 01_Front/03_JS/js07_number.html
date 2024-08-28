@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자</title>
+    <script type="text/javascript">
+        // ----------
+        const basic = function(){
+            console.log();
+        }
+        const arrow = ()=>{ //화살표함수
+            console.log();
+            alert();
+        }
+
+
+        const basic2=function(no1,no2){
+            return no1+no2;
+        }
+        const arrow2 = (no1,no2) => no1+no2;
+
+        const basic3=function(no1){
+            return no1*10;
+        }
+        const arrow3 = nol=>no1*10;
+
+
+        const arrow4 = ()=>{
+            alert();
+            return 10;
+        }
+
+
+
+        const numberObj = ()=>{
+            let doc = document.getElementById("inputText");
+            //let doc = document.getElementByTagName("div")[0]; //배열로 가져다 주지만 하나만 있기에 인덱스0에 접근
+        
+            //1.작성방법
+            let num = new Number(7);
+            let num02 = 7;
+
+
+            doc.innerHTML = Number.parseInt("A")+"<br>";
+            //parseInt("args"); --> 괄호안의 값(argument) 숫자로 바꾸겠다.
+            //NaN : Not a Number
+
+            let num03 = 333.34567;
+            doc.innerHTML += num03.toFixed(3)+"<br>";
+            //toFixed() : 실수형의 소수점자리수 지정하고 문자열로 반환
+        }
+
+    </script>
+</head>
+<body>
+<pre>
+*자바스크립트에서 기본적으로 제공하는 객체 중 하나*
+1. Number 객체
+- 정수와 실수를 다루는 객체
+<button onclick="numberObj();">number 객체</button>
+<div id="inputText"></div>
+</pre>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery vs javascript</title>
+    <style>
+        img{
+            width: 200px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        function test(){
+            //id가 list01인 요소의 자식인 li를 선택
+            //li들 중 첫번째 요소에 배경색을 pink로 바꾸고싶다.
+
+            //1. js
+            //document.getElementsByTagName("li")[0].style.backgroundColor="pink";
+            
+            //2. jq ($)
+            //jQuery 기본 작성 방식 : selector 표현식(css 작성방식 + javascript 작성방식)
+            //                       $(선택자).함수();
+            //$("#list01>li").eq(0).css("background-color","pink");
+            $("#list01>li").css("background-color","pink");
+
+        }
+
+
+        //img태그를 클릭하면 alert();실행
+        //window.onload=()=>{
+        //    document.getElementsByTagName("img")[0].onclick=function(){
+        //        alert("Asdf");
+        //    }
+        //}
+        //jQuery==>
+        //1.jQuery(document).ready(function(){});
+        $(function(){
+            $("img").click(function(){
+                alert("이미지 클릭!!!");
+                $(this).hide();
+            });
+        });
+
+        function showImg(){
+            $("img").show();
+        }
+        function toggleImg(){
+            //보이는 상태라면 보이지 않게, 안보이는 상태라면 보이게 해준다.
+            $("img").toggle();
+        }
+        function resizeImg(){
+            //$("img").css("width","100px");
+            //$("img").css("height","100px");
+            $("img").css({"width":"100px","height":"100px"}).css("opacity","0.5");
+            /*
+                {
+                속성명:속성값,
+                속성명:속성값
+                }
+            */
+        }
+        function addImg(){
+            //last() : 마지막 요소 찾기
+            //after() : 선택한 요소 다음에 새로운 태그 추가 or 태그 이동
+            $("img").last().after('<img src="../01_HTML/sample/image/img02.png">');
+        }
+    </script>
+</head>
+<body>
+    <!-- jQuery -->
+    <h1>jQuery 시작</h1>
+    <ul id="list01">
+        <li>1.셀렉터 표현식</li>
+        <li>2.DOM탐색</li>
+        <li>3.이벤트</li>
+        <li>4.이펙트</li>
+    </ul>
+    <button onclick="test();">리스트 강조</button>
+    <hr>
+    <button onclick="showImg();">이미지 보이기</button>
+    <button onclick="toggleImg();">이미지 숨기기/보이기</button>
+    <button onclick="resizeImg();">이미지 크기 줄이기</button>
+    <button onclick="addImg();">이미지 추가</button>
+    <div>
+        <img src="../01_HTML/sample/image/img02.png">
+    </div>
+</body>
+</html>

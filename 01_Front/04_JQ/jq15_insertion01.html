@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 삽입</title>
+    <style>
+        div{border: 1px solid red;}
+        .prepend{border: 1px solid blue;}
+        .append{border: 1px solid green;}
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("button:eq(0)").click(function(){
+                $("div").prepend( $("<p>").addClass("prepend").text("prepend로 추가") );
+                //prepend() : 선택된 요소 첫번째에 새로운 요소나 컨텐츠 추가
+            });
+            $("button:eq(1)").click(function(){
+                $("div").append( $("<p>").addClass("append").text("append로 추가") );
+                //append() : 선택된 요소 마지막에 새로운 요소나 컨텐츠 추가
+            });
+            $("button:eq(2)").click(function(){
+                $("div").html("<b style='font-size:30px;'>html 요소를 바꾼다.</b>");
+            });
+            $("button:eq(3)").click(function(){
+                $("div").text("<b>text 요소를 바꾼다.</b>");
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <button>prepend()</button>
+    <button>append()</button>
+    <button>html()</button>
+    <button>text()</button>
+    
+    <div>
+        <p>내부 삽입 01</p>
+        <p>내부 삽입 02</p>
+    </div>
+</body>
+</html>

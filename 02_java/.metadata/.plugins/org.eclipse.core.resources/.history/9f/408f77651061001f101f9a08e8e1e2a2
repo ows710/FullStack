@@ -1,0 +1,5 @@
+package com.inherit.par02_overrideTest.model.vo;
+
+public class Book {
+
+}
