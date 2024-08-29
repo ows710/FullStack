@@ -1,8 +1,0 @@
-package com.test01.chap04_constructor.model;
-
-public class User {
-	private String userId;
-	private String userPwd;
-	private String userName;
-	private Date date;
-}
