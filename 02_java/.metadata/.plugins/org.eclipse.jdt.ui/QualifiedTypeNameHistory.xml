@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="com.test01.DeArrayTest01"/>
     <fullyQualifiedTypeName name="com.silsub1.model.Sample"/>
     <fullyQualifiedTypeName name="com.arrayPractice1.sample.ArraySample"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.silsub1.book.model.vo.Book"/>
     <fullyQualifiedTypeName name="com.silsub2.point.model.vo.Circle"/>
     <fullyQualifiedTypeName name="com.silsub2.point.model.vo.Rectangle"/>
@@ -20,4 +19,8 @@
     <fullyQualifiedTypeName name="silsub4.model.vo.Student"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
