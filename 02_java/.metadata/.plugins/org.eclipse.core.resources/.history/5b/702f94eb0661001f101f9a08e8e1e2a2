@@ -1,7 +1,0 @@
-package com.inherit.par01_inheritTest.after;
-
-public class Desktop {
-
-	//고유속성을 정의
-	private boolean allInOne;
-}

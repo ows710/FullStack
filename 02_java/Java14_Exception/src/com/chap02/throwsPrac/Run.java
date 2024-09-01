@@ -9,14 +9,11 @@ public class Run {
 	public static void main(String[] args) /*throws IOException*/ { //jvm이 처리
 		try {
 			//예외발생할 수 있는 코드를 포함한 실행코드를 작성
-			String s = null;
-			s.length();
-			
 			methodA();
 		}catch(IOException e) {
 			//해당 예외가 발생했을 때 실행할 코드를 작성
 			System.out.println(e.getMessage());
-			System.out.println("main()에서 처리");	
+			System.out.println("main()에서 처리");
 		}finally {
 			//예외가 발생 하거나 정상적으로 동작을 한 다음 무조건 실행
 			System.out.println("finally 실행!!");
