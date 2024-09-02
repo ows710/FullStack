@@ -6,6 +6,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ows71\OneDrive\바탕 화면\FullStack\02_java\Java03_Operator"/>
+			<item value="C:\Users\ows71\OneDrive\바탕 화면\FullStack\02_java\Java02_Method"/>
+			<item value="C:\Users\ows71\OneDrive\바탕 화면\FullStack\02_java\Java01_Variable"/>
+			<item value="C:\Users\ows71\OneDrive\바탕 화면\FullStack\02_java\Java00_firstJavaProject"/>
 			<item value="C:\Users\ows71\OneDrive\바탕 화면\02_java\Java03_Operator"/>
 			<item value="C:\Users\ows71\OneDrive\바탕 화면\02_java\Java02_Method"/>
 			<item value="C:\Users\ows71\OneDrive\바탕 화면\02_java\Java01_Variable"/>
