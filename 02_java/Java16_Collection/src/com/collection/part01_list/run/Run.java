@@ -1,0 +1,11 @@
+package com.collection.part01_list.run;
+
+import com.collection.part01_list.sort.controller.ScoreController;
+
+public class Run {
+	public static void main(String[] args) {
+		ScoreController sc = new ScoreController();
+		sc.scoreSort();
+	}
+
+}

@@ -72,10 +72,7 @@ public class ArrayListTest {
 		
 		Collections.sort(alist);
 		System.out.println("list 정렬: " + alist);
-		
-		
-		
-		
+
 	}
 
 }
