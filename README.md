@@ -6,3 +6,4 @@
 * 9/1: back-java 기본 API, 예외처리, 입출력 추가실습
 * 9/2: back-java 입출력 마무리 및 컬렉션 학습
 * 9/3: back-java 컬렉션(list,set,map,generics 등) 학습
+* 9/4: back-java MVC패턴을 이용한 게시물 및 도서 생성,변경,탐색 연구
