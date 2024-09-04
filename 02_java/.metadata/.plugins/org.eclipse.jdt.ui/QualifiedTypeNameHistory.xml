@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.silsub1.example.Munjae"/>
-    <fullyQualifiedTypeName name="com.test01.ArrayTest02"/>
-    <fullyQualifiedTypeName name="com.silsub1.example.ForWhile"/>
     <fullyQualifiedTypeName name="com.test01.chap02_class.publicClass.model.PublicClassTest"/>
     <fullyQualifiedTypeName name="com.test01.chap04_constructor.model.User"/>
     <fullyQualifiedTypeName name="com.inherit.par02_overrideTest.model.vo.Book"/>
@@ -19,7 +16,6 @@
     <fullyQualifiedTypeName name="silsub4.model.vo.Student"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
@@ -36,22 +32,32 @@
     <fullyQualifiedTypeName name="com.chap04_addStream.part04_objectStream.model.dao.TestObject"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="com.collection.part01_list.sort.controller.ScoreController"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="com.collection.part01_list.sort.model.vo.Score"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.collection.silsub1.model.dao.BoardDao"/>
+    <fullyQualifiedTypeName name="com.collection.silsub1.controller.BoardController"/>
+    <fullyQualifiedTypeName name="com.collection.silsub1.view.BoardMenu"/>
+    <fullyQualifiedTypeName name="com.collection.silsub1.model.dto.BoardDto"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.collection.silsub2.view.BookMenu"/>
+    <fullyQualifiedTypeName name="com.collection.silsub2.controller.BookManager"/>
+    <fullyQualifiedTypeName name="com.collection.silsub2.model.dao.BookDao"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.collection.silsub2.model.vo.Book"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.collection.silsub2.model.comparator.AscCategory"/>
 </qualifiedTypeNameHistroy>
