@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.test01.chap02_class.publicClass.model.PublicClassTest"/>
-    <fullyQualifiedTypeName name="com.test01.chap04_constructor.model.User"/>
-    <fullyQualifiedTypeName name="com.inherit.par02_overrideTest.model.vo.Book"/>
-    <fullyQualifiedTypeName name="com.test01.DeArrayTest01"/>
-    <fullyQualifiedTypeName name="com.silsub1.model.Sample"/>
-    <fullyQualifiedTypeName name="com.arrayPractice1.sample.ArraySample"/>
-    <fullyQualifiedTypeName name="com.silsub1.book.model.vo.Book"/>
     <fullyQualifiedTypeName name="com.silsub2.point.model.vo.Circle"/>
     <fullyQualifiedTypeName name="com.silsub2.point.model.vo.Rectangle"/>
     <fullyQualifiedTypeName name="silsub1.model.vo.Member"/>
@@ -16,12 +9,9 @@
     <fullyQualifiedTypeName name="silsub4.model.vo.Student"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.DataInputStream"/>
     <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
@@ -54,10 +44,20 @@
     <fullyQualifiedTypeName name="com.collection.silsub2.view.BookMenu"/>
     <fullyQualifiedTypeName name="com.collection.silsub2.controller.BookManager"/>
     <fullyQualifiedTypeName name="com.collection.silsub2.model.dao.BookDao"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.collection.silsub2.model.vo.Book"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="com.collection.silsub2.model.comparator.AscCategory"/>
+    <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
