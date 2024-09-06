@@ -8,3 +8,4 @@
 * 9/3: back-java 컬렉션(list,set,map,generics 등) 연구
 * 9/4: back-java MVC패턴을 이용한 게시물 및 도서 생성,변경,탐색 연구
 * 9/5: back-java Thread, network(서버-클라이언트) 연구
+* 9/6: back-database(Oracle, DBeaver 등) 환경 설치 및 SQL 명렁어 학습
