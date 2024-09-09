@@ -11,3 +11,4 @@
 * 9/6: back-database(Oracle, DBeaver 등) 환경 설치 및 SQL 명렁어 학습
 * 9/7: back-database 설치 절차 재확인 및 환경 점검
 * 9/8: back-java 지금까지 했던 내용들 재확인 및 검토
+* 9/9: back-database SELECT문 집중 연구
