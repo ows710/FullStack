@@ -336,7 +336,9 @@ WHERE (JOB_CODE = 'J7' OR JOB_CODE = 'J2') AND SALARY >= 2000000;
 -- 홍길동  hong_gd
 
 -- 1. 이름과 이메일 조회
+SELECT EMP_NAME, EMAIL FROM EMPLOYEE;
 -- 2. @ 위치 찾기
+SELECT INSTR(EMAIL, '@') FROM EMPLOYEE;
 -- 3. SUBSTR 활용하기
 SELECT EMP_NAME "이름", SUBSTR(EMAIL, 1, INSTR(EMAIL,'@')-1) "이메일"
 FROM EMPLOYEE;
@@ -347,6 +349,10 @@ FROM EMPLOYEE;
 -- 조회하여 사원 목록표를 만들고자 한다.
 -- 이 때, 이메일은 '@' 전 까지, 
 -- 주민번호는 7번째 자리 이후 '*' 처리를 하여
--- 조회 하시오.
-SELECT EMP_ID "사번", EMP_NAME "사원명", SUBSTR(EMAIL, 1, INSTR(EMAIL,'@')-1) "이메일", CONCAT(SUBSTR(EMP_NO, 1,7), '*******') "주민번호"
+-- 조회 하시오. ||, CONCAT(), RPAD()
+SELECT EMP_ID "사번",
+	   EMP_NAME "사원명",
+	   SUBSTR(EMAIL, 1, INSTR(EMAIL,'@')-1) "이메일",
+	   RPAD(SUBSTR(EMP_NO,1,8),14,'*') "주민번호"
+	   -- CONCAT(SUBSTR(EMP_NO, 1,8), '******') "주민번호"
 FROM EMPLOYEE;
