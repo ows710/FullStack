@@ -12,3 +12,4 @@
 * 9/7: back-database 설치 절차 재확인 및 환경 점검
 * 9/8: back-java 지금까지 했던 내용들 재확인 및 검토
 * 9/9: back-database SELECT문 집중 연구
+* 9/10: back-database SELECT문에 쓰이는 기본 함수들 연구
