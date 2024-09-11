@@ -478,12 +478,6 @@ SELECT EMP_ID, EMP_NAME, DEPT_CODE, SALARY
 FROM EMPLOYEE
 WHERE SALARY > 3000000;
 
--- JOIN --
--- 두 개 이상의 테이블을 하나로 합쳐 사용하는 명령 구문
-
-
-
-
 
 --1. 직원명과 주민번호를 조회함
 --  단, 주민번호 9번째 자리부터 끝까지는 '*'문자로 채움
