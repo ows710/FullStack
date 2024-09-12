@@ -8,9 +8,10 @@
 * 9/3: back-java 컬렉션(list,set,map,generics 등) 연구
 * 9/4: back-java MVC패턴을 이용한 게시물 및 도서 생성,변경,탐색 연구
 * 9/5: back-java Thread, network(서버-클라이언트) 연구
-* 9/6: back-database(Oracle, DBeaver 등) 환경 설치 및 SQL 명렁어 학습
+* 9/6: back-database(Oracle, DBeaver 등) 환경 설치 및 SQL 명렁어 연구
 * 9/7: back-database 설치 절차 재확인 및 환경 점검
 * 9/8: back-java 지금까지 했던 내용들 재확인 및 검토
 * 9/9: back-database SELECT문 집중 연구
 * 9/10: back-database SELECT문에 쓰이는 기본 함수들 연구
 * 9/11: back-database SELECT문 관련 내용(JOIN, 서브 쿼리 등) 마무리
+* 9/12: back-database CREATE, DROP, INSERT, ALTER문 및 제약조건 연구
