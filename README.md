@@ -15,3 +15,4 @@
 * 9/10: back-database SELECT문에 쓰이는 기본 함수들 연구
 * 9/11: back-database SELECT문 관련 내용(JOIN, 서브 쿼리 등) 마무리
 * 9/12: back-database CREATE, DROP, INSERT, ALTER문 및 제약조건 연구
+* 9/13: back-database DML(INSERT, UPDATE, DELETE), TCL(COMMIT, ROLLBACK) 연구
