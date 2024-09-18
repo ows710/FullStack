@@ -20,3 +20,4 @@
 * 9/15: back-database DML, TCL을 이용한 내용들 재연구
 * 9/16: back-database 설치 이상 유무 검토
 * 9/17: back-database 지금까지 배운 내용 검토
+* 9/18: back-database TCL 관련 조작 연구
