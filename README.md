@@ -22,3 +22,4 @@
 * 9/17: back-database 지금까지 배운 내용 검토
 * 9/18: back-database TCL 관련 조작 연구
 * 9/19: back-database 뷰,시퀀스,인덱스로 데이터 생성 및 변경, PL로 프로시저,트리거 연구
+* 9/20: back-JDBC를 이용한 쿼리 조정 연구
