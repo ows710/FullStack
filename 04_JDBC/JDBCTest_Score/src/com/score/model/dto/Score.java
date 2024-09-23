@@ -11,6 +11,14 @@ public class Score {
 	
 	//생성자,getter/setter, toString
 	public Score() {}
+	
+	public Score(String name, int kor, int eng, int math) {
+		super();
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
 
 	public Score(String name, int kor, int eng, int math, int sum, double avg, String grade) {
 		super();
@@ -86,5 +94,33 @@ public class Score {
 	}
 	
 	
+	public void scoreSum() {
+		this.sum = this.kor + this.eng + this.math;
+	}
+	
+	public void scoreAvg() {
+		this.avg = this.sum/3.0;
+	}
+	public void scoreGrade() {
+		int select = (int)(avg/10);
+		
+		switch(select) {
+		case 10:
+		case 9:
+			this.grade = "A";
+			break;
+		case 8:
+			this.grade = "B";
+			break;
+		case 7:
+			this.grade = "C";
+			break;
+		case 6:
+			this.grade = "D";
+			break;
+		default:
+			this.grade = "F";
+		}
+	}
 	
 }

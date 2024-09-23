@@ -9,9 +9,9 @@ public interface ScoreDao {
 	
 	String getAllSqL = " SELECT * FROM SCORE ";
 	String getOneSqL = " SELECT * FROM SCORE WHERE NAME=? ";
-	String insertSqL = "";
-	String updateSqL = "";
-	String deleteSqL = "";
+	String insertSqL = " INSERT INTO SCORE VALUES(?,?,?,?,?,?,?) ";
+	String updateSqL = " UPDATE SCORE SET KOR=?,ENG=?,MATH=?,SUM =?,AVG=?,GRADE=? WHERE NAME=? ";
+	String deleteSqL = " DELETE FROM SCORE WHERE NAME=? ";
 	
 	public List<Score> getAll(Connection con);
 	public Score getOne(Connection con, String name);

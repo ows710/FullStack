@@ -10,5 +10,4 @@ public interface ScoreService {
 	public int insert(Score s);
 	public int update(Score s);
 	public int delete(String name);
-	
 }
