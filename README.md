@@ -25,3 +25,4 @@
 * 9/20: back-JDBC를 이용한 쿼리 조정 연구
 * 9/21: back-JDBC 내용 검토 및 용도 파악
 * 9/22: back-JDBC와 database의 연관성 및 실무 환경에서의 역할 확인
+* 9/23: back-JDBC를 이용한 CRUD(ex.과목점수테이블) 연구
