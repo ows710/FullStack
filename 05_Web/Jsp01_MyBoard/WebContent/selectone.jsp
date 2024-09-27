@@ -21,6 +21,7 @@
 		MyBoard dto = dao.selectOne(myno);
 		
 %>
+<h1>DETAIL</h1>
 <table>
 		<tr>
 				<th>NAME</th>
@@ -41,6 +42,14 @@
 						readonly="readonly"><%=dto.getMycontent() %></textarea>
 				</td>
 		</tr>
+		<tr>
+				<td colspan="2">
+						<button onclick="location.href='myupdate.jsp?myno=<%=dto.getMyno()%> ' ">update</button>&nbsp;
+						<button onclick="location.href='mydelete.jsp?myno=<%=dto.getMyno()%> ' ">delete</button>&nbsp;
+						<button onclick="location.href='mylist.jsp'">list</button>&nbsp;
+				</td>
+		</tr>
 </table>
+
 </body>
 </html>
