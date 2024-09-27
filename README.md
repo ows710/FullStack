@@ -29,3 +29,4 @@
 * 9/24: back-DB 모델링 ERD그리기 및 제1정규화 연구(feat.ERDCloud)
 * 9/25: back-제2정규화, 제3정규화 연구 및 Apache Tomcat 환경 마련
 * 9/26: WEB-JSP를 이용한 게시물 조회 및 추가 연구
+* 9/27: WEB-JSP를 이용한 게시물 수정,삭제 및 MVC 기본틀 제작
