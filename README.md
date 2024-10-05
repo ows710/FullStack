@@ -52,25 +52,4 @@
 * 9/10: back-database SELECT문에 쓰이는 기본 함수들 연구
 * 9/11: back-database SELECT문 관련 내용(JOIN, 서브 쿼리 등) 마무리
 * 9/12: back-database CREATE, DROP, INSERT, ALTER문 및 제약조건 연구
-* 9/13: back-database DML(INSERT, UPDATE, DELETE), TCL(COMMIT, ROLLBACK) 연구
-* 9/14: back-database CREATE, SELECT, DROP 재검토
-* 9/15: back-database DML, TCL을 이용한 내용들 재연구
-* 9/16: back-database 설치 이상 유무 검토
-* 9/17: back-database 지금까지 배운 내용 검토
-* 9/18: back-database TCL 관련 조작 연구
-* 9/19: back-database 뷰,시퀀스,인덱스로 데이터 생성 및 변경, PL로 프로시저,트리거 연구
-* 9/20: back-JDBC를 이용한 쿼리 조정 연구
-* 9/21: back-JDBC 내용 검토 및 용도 파악
-* 9/22: back-JDBC와 database의 연관성 및 실무 환경에서의 역할 확인
-* 9/23: back-JDBC를 이용한 CRUD(ex.과목점수테이블) 연구
-* 9/24: back-DB 모델링 ERD그리기 및 제1정규화 연구(feat.ERDCloud)
-* 9/25: back-제2정규화, 제3정규화 연구 및 Apache Tomcat 환경 마련
-* 9/26: WEB-JSP를 이용한 게시물 조회 및 추가 연구
-* 9/27: WEB-JSP를 이용한 게시물 수정,삭제 및 MVC 기본틀 제작
-* 9/28: WEB-JSP 환경 검토
-* 9/29: WEB-JSP 오류 수정 및 구조 틀 확인
-* 9/30: WEB-JSP를 이용한 MVC 리스트 CRUD방식 연구
-* 10/1: WEB-JSP를 이용한 로그인, 회원 정보 조회 및 일부변경 연구
-* 10/2: WEB-JSP를 이용한 회원가입, 탈퇴 기능 구현 연구
-* 10/3: WEB-JSP에 적용되는 Servlet 관련 기능 파악
-* 10/4: WEB-JSP에서의 MVC패턴 흐름 파악 연구
+* 9/13: back-database DML(INSERT, UPDATE, DELETE), TCL(COMMIT, ROLLBAC토
