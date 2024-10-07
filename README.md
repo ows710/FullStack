@@ -39,3 +39,4 @@
 * 10/4: WEB-JSP에서의 MVC패턴 흐름 파악 연구
 * 10/5: WEB-JSP 관련 코드들 검토
 * 10/6: WEB-JSP 관련 내용 및 실무에서의 용도 파악 연구
+* 10/7: WEB-JSP 관련 servlet 특징, scope 구성요소(page, request, session, application), EL 연구
