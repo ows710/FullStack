@@ -41,3 +41,4 @@
 * 10/6: WEB-JSP 관련 내용 및 실무에서의 용도 파악 연구
 * 10/7: WEB-JSP 관련 servlet 특징, scope 구성요소(page, request, session, application), EL 연구
 * 10/8: WEB-JSP 관련 JSTL 및 이를 이용한 MVC패턴(feat.게시물 조회, 추가) 연구
+* 10/9: WEB-JSP 관련 servlet, EL, JSTL 특징 파악 연구
