@@ -44,3 +44,4 @@
 * 10/9: WEB-JSP 관련 servlet, EL, JSTL 특징 파악 연구
 * 10/10: WEB-JSP 관련 JSTL을 이용한 MVC패턴(feat.게시물 수정, 삭제) 및 댓글조회 연구
 * 10/11: WEB-JSP 관련 JSTL을 이용한 댓글 수정, 삭제 및 대댓글 작성 연구
+* 10/12: WEB-JSP 관련 JSTL을 이용한 대댓글 알고리즘 파악
