@@ -47,3 +47,4 @@
 * 10/12: WEB-JSP 관련 JSTL을 이용한 대댓글 알고리즘 파악
 * 10/13: WEB-JSP 관련 JSTL을 이용한 MVC패턴, 대댓글 내용 검토
 * 10/14: WEB-JSP 관련 Jquery를 이용한 Ajax 연구(feat.사원정보조회)
+* 10/15: WEB-JSP 관련 Json을 이용한 DB에 데이터 삭제 및 저장(직접, Ajax) 연구(feat.자전거대여정보)
