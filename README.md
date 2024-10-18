@@ -50,3 +50,4 @@
 * 10/15: WEB-JSP 관련 Json을 이용한 DB에 데이터 삭제 및 저장(직접, Ajax) 연구(feat.자전거대여정보)
 * 10/16: WEB-JSP 관련 Mybatis를 이용한 게시물 조회 및 선택 연구
 * 10/17: WEB-JSP 관련 Jquery, Json, Mybatis를 이용한 알고리즘 파악
+* 10/18: WEB-JSP 관련 JDBC 대신 Mybatis로 게시물,리스트 CRUD 연구
