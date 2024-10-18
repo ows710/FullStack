@@ -39,8 +39,18 @@ public class MyBoardDao extends SqlMapConfig {
 	//추가
 	public int insert(MyBoard dto) {
 		//hint => ("namespace.id", dto);
+		SqlSession session = null;
+		int res = 0;
 		
-		return 0;
+		try {
+			session = getSqlSessionFactory().openSession(true);
+			res = session.insert("com.my.myboard.myinsert", dto);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		return res;
 	}
 	
 	//수정
