@@ -53,3 +53,4 @@
 * 10/18: WEB-JSP 관련 JDBC 대신 Mybatis로 게시물,리스트 CRUD 연구
 * 10/19: WEB-JSP 관련 Mybatis 환경 점검 및 특징 파악
 * 10/20: WEB-JSP 관련 MVC 패턴에 Mybatis 적용 방안 모색 연구
+* 10/21: framework-Spring 환경 설치 및 bean 용도 파악
